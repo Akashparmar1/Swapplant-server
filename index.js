@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 // MiddleWare
 
 app.use(cors({
-    origin: ['https://swapplant-client-main.vercel.app/'],
+    origin: '*',
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
 }));
