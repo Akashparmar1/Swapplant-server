@@ -9,11 +9,12 @@ const port = process.env.PORT || 5000;
 
 // MiddleWare
 
-app.use(cors({
-    origin: '*',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
-}));
+// app.use(cors({
+//     origin: ['https://swapplant-server.onrender.com', 'https://swapplant-client-main.vercel.app/'],
+//     credentials: true,
+//     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
+// }));
+app.use(cors());
 
 app.use(express.json());
 app.use(cookieParser());
